@@ -1,0 +1,62 @@
+.container {
+  max-width: 900px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.search {
+  margin-top: 50px;
+  .search-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    img {
+      width: 60px;
+    }
+    .search-header--text {
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+}
+.inputs-wrapper {
+  border-radius: 10px;
+  box-shadow: 1px 1px 11px #00000030;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  input,
+  select {
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: capitalize;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  select {
+    border-right: 1px solid rgb(226, 226, 226);
+    width: 150px;
+    &:focus {
+      border-right: 1px solid rgb(226, 226, 226);
+    }
+  }
+  input {
+    width: calc(100% - 150px);
+    &.loading {
+      background-image: url("./../assets/spinner.svg");
+      background-position: right center;
+      background-size: 44px;
+      background-repeat: no-repeat;
+    }
+  }
+}
